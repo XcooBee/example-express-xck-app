@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/styles/pizza.css')
+  // Header with image
+  header(class="bgimg w3-display-container w3-grayscale-min" id="home")
+    div(class="w3-display-bottomleft w3-padding")
+      span(class="w3-tag w3-xlarge") Cookie Kit Demo
+
+    div(class="w3-display-middle w3-center")
+      span(class="w3-text-white w3-hide-small" style="font-size:100px")
+        p thin <br> CRUST PIZZA
+      span(class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px")
+        p <b>thin<br>CRUST PIZZA</b>
+      p
+        a(href="/menu" class="w3-button w3-xxlarge w3-black") Let me see the menu
+  include foot.pug

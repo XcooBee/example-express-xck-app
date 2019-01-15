@@ -1,0 +1,96 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/styles/noimage.css')
+  // header place holder
+  header#home.bgimg.w3-display-container.w3-grayscale-min
+
+  // Menu Container
+  #menu.w3-container.w3-black.w3-padding-64.w3-xxlarge
+    .w3-content
+      h1.w3-center.w3-jumbo(style='margin-bottom:64px') THE MENU
+      .w3-row.w3-center.w3-border.w3-border-dark-grey
+        a#myLink(href='javascript:void(0)', onclick="openMenu(event, 'Pizza');")
+          .w3-col.s4.tablink.w3-padding-large.w3-hover-red.w3-red Pizza
+        a(href='javascript:void(0)', onclick="openMenu(event, 'Pasta');")
+          .w3-col.s4.tablink.w3-padding-large.w3-hover-red Salads
+        a(href='javascript:void(0)', onclick="openMenu(event, 'Starter');")
+          .w3-col.s4.tablink.w3-padding-large.w3-hover-red Starter
+      #Pizza.w3-container.menu.w3-padding-32.w3-white(style='display: block;')
+        h1
+          b Margherita
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $12.50
+        p.w3-text-grey Fresh tomatoes, fresh mozzarella, fresh basil
+        hr
+        h1
+          b Formaggio
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $15.50
+        p.w3-text-grey Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)
+        hr
+        h1
+          b Chicken
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $17.00
+        p.w3-text-grey Fresh tomatoes, mozzarella, chicken, onions
+        hr
+        h1
+          b Pineapple'o'clock
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $16.50
+        p.w3-text-grey Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil
+        hr
+        h1
+          b Meat Town
+          span.w3-tag.w3-red.w3-round Hot!
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $20.00
+        p.w3-text-grey Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken
+        hr
+        h1
+          b Parma
+          span.w3-tag.w3-grey.w3-round New
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $21.50
+        p.w3-text-grey Fresh tomatoes, mozzarella, parma, bacon, fresh arugula
+      #Pasta.w3-container.menu.w3-padding-32.w3-white(style='display: none;')
+        h1
+          b Lasagna
+          span.w3-tag.w3-grey.w3-round Popular
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $13.50
+        p.w3-text-grey Special sauce, mozzarella, parmesan, ground beef
+        hr
+        h1
+          b Ravioli
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $14.50
+        p.w3-text-grey Ravioli filled with cheese
+        hr
+        h1
+          b Spaghetti Classica
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $11.00
+        p.w3-text-grey Fresh tomatoes, onions, ground beef
+        hr
+        h1
+          b Seafood pasta
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $25.50
+        p.w3-text-grey Salmon, shrimp, lobster, garlic
+      #Starter.w3-container.menu.w3-padding-32.w3-white(style='display: none;')
+        h1
+          b Today's Soup
+          span.w3-tag.w3-grey.w3-round Seasonal
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $5.50
+        p.w3-text-grey Ask the waiter
+        hr
+        h1
+          b Bruschetta
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $8.50
+        p.w3-text-grey Bread with pesto, tomatoes, onion, garlic
+        hr
+        h1
+          b Garlic bread
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $9.50
+        p.w3-text-grey Grilled ciabatta, garlic butter, onions
+        hr
+        h1
+          b Tomozzarella
+          span.w3-right.w3-tag.w3-dark-grey.w3-round $10.50
+        p.w3-text-grey Tomatoes and mozzarella
+      br
+
+  script(src="javascripts/helper.js")
+  include foot.pug
