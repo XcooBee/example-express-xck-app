@@ -7,4 +7,5 @@ XcooBee.kit.initialize({
   termsUrl: "/terms",
   testMode: true,
   textMessage: "Welcome to our pizza site. We use these types of cookies. Please let us know if this is OK.",
+  detectCountry: true,
 });
